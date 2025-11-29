@@ -1,0 +1,23 @@
+# Development files
+node_modules/
+.DS_Store
+*.log
+
+# Git files
+.git
+.gitignore
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Documentation
+docs/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo

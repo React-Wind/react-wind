@@ -1,0 +1,52 @@
+{
+  "name": "react-wind",
+  "version": "1.0.0",
+  "description": "A powerful CLI tool for scaffolding modern React applications with Vite and Tailwind CSS - Lightning fast project setup",
+  "main": "bin/cli.js",
+  "bin": {
+    "react-wind": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "templates",
+    "README.md",
+    "CONTRIBUTING.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-wind",
+    "react",
+    "vite",
+    "tailwind",
+    "tailwindcss",
+    "cli",
+    "scaffold",
+    "generator",
+    "template",
+    "boilerplate",
+    "create-react-app",
+    "project-generator",
+    "starter-kit"
+  ],
+  "author": "Nitheesh Rajendran",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/React-Wind/react-wind.git"
+  },
+  "homepage": "https://github.com/React-Wind/react-wind#readme",
+  "bugs": {
+    "url": "https://github.com/React-Wind/react-wind/issues"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
