@@ -1,10 +1,10 @@
 {
-  "name": "react-wind",
+  "name": "create-reactwindjs",
   "version": "1.0.0",
   "description": "A powerful CLI tool for scaffolding modern React applications with Vite and Tailwind CSS - Lightning fast project setup",
   "main": "bin/cli.js",
   "bin": {
-    "react-wind": "bin/cli.js"
+    "create-reactwindjs": "bin/cli.js"
   },
   "files": [
     "bin",

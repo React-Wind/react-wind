@@ -105,21 +105,21 @@ const args = process.argv.slice(2);
 // Handle different invocation patterns
 if (args.length === 0) {
     // No arguments - show help
-    console.log(chalk.cyan('\n🌊 React-Wind - Modern React App Scaffolder\n'));
+    console.log(chalk.cyan('\n🌊 ReactWindJS - Modern React App Scaffolder\n'));
     console.log(chalk.white('Usage:'));
-    console.log(chalk.gray('  npm create react-wind@latest <project-name>'));
-    console.log(chalk.gray('  npx react-wind <project-name>'));
-    console.log(chalk.gray('  react-wind create react <project-name>\n'));
+    console.log(chalk.gray('  npm create reactwindjs@latest <project-name>'));
+    console.log(chalk.gray('  npx create-reactwindjs <project-name>'));
+    console.log(chalk.gray('  create-reactwindjs create react <project-name>\n'));
     console.log(chalk.white('Examples:'));
-    console.log(chalk.gray('  npm create react-wind@latest my-app'));
-    console.log(chalk.gray('  react-wind my-awesome-app\n'));
+    console.log(chalk.gray('  npm create reactwindjs@latest my-app'));
+    console.log(chalk.gray('  create-reactwindjs my-awesome-app\n'));
     process.exit(0);
 } else if (args.length === 1 && !args[0].startsWith('-')) {
-    // Single argument: npm create react-wind@latest my-app OR react-wind my-app
+    // Single argument: npm create reactwindjs@latest my-app OR create-reactwindjs my-app
     const projectName = args[0];
     createProject(projectName, 'react');
 } else if (args[0] === 'create' && args.length === 3) {
-    // Explicit create command: react-wind create react my-app
+    // Explicit create command: create-reactwindjs create react my-app
     const template = args[1];
     const projectName = args[2];
     createProject(projectName, template);
@@ -127,8 +127,8 @@ if (args.length === 0) {
     // Unknown pattern - show help
     console.log(chalk.yellow('\n⚠️  Invalid arguments\n'));
     console.log(chalk.white('Usage:'));
-    console.log(chalk.gray('  npm create react-wind@latest <project-name>'));
-    console.log(chalk.gray('  npx react-wind <project-name>'));
-    console.log(chalk.gray('  react-wind create react <project-name>\n'));
+    console.log(chalk.gray('  npm create reactwindjs@latest <project-name>'));
+    console.log(chalk.gray('  npx create-reactwindjs <project-name>'));
+    console.log(chalk.gray('  create-reactwindjs create react <project-name>\n'));
     process.exit(1);
 }
