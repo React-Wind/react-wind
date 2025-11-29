@@ -1,6 +1,6 @@
 {
   "name": "reactwindjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A powerful CLI tool for scaffolding modern React applications with Vite and Tailwind CSS - Lightning fast project setup",
   "main": "bin/cli.js",
   "bin": {
