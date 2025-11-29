@@ -107,19 +107,18 @@ if (args.length === 0) {
     // No arguments - show help
     console.log(chalk.cyan('\n🌊 ReactWindJS - Modern React App Scaffolder\n'));
     console.log(chalk.white('Usage:'));
-    console.log(chalk.gray('  npm create reactwindjs@latest <project-name>'));
-    console.log(chalk.gray('  npx create-reactwindjs <project-name>'));
-    console.log(chalk.gray('  create-reactwindjs create react <project-name>\n'));
+    console.log(chalk.gray('  npx reactwindjs <project-name>'));
+    console.log(chalk.gray('  reactwindjs create react <project-name>\n'));
     console.log(chalk.white('Examples:'));
-    console.log(chalk.gray('  npm create reactwindjs@latest my-app'));
-    console.log(chalk.gray('  create-reactwindjs my-awesome-app\n'));
+    console.log(chalk.gray('  npx reactwindjs my-app'));
+    console.log(chalk.gray('  reactwindjs my-awesome-app\n'));
     process.exit(0);
 } else if (args.length === 1 && !args[0].startsWith('-')) {
-    // Single argument: npm create reactwindjs@latest my-app OR create-reactwindjs my-app
+    // Single argument: npx reactwindjs my-app OR reactwindjs my-app
     const projectName = args[0];
     createProject(projectName, 'react');
 } else if (args[0] === 'create' && args.length === 3) {
-    // Explicit create command: create-reactwindjs create react my-app
+    // Explicit create command: reactwindjs create react my-app
     const template = args[1];
     const projectName = args[2];
     createProject(projectName, template);
@@ -127,8 +126,7 @@ if (args.length === 0) {
     // Unknown pattern - show help
     console.log(chalk.yellow('\n⚠️  Invalid arguments\n'));
     console.log(chalk.white('Usage:'));
-    console.log(chalk.gray('  npm create reactwindjs@latest <project-name>'));
-    console.log(chalk.gray('  npx create-reactwindjs <project-name>'));
-    console.log(chalk.gray('  create-reactwindjs create react <project-name>\n'));
+    console.log(chalk.gray('  npx reactwindjs <project-name>'));
+    console.log(chalk.gray('  reactwindjs create react <project-name>\n'));
     process.exit(1);
 }

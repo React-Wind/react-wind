@@ -1,12 +1,12 @@
-# React-Wind 🌊
+# ReactWindJS 🌊
 
 <div align="center">
 
 **A powerful CLI tool for scaffolding modern React applications with Vite and Tailwind CSS**
 
-[![npm version](https://img.shields.io/npm/v/react-wind.svg)](https://www.npmjs.com/package/react-wind)
+[![npm version](https://img.shields.io/npm/v/reactwindjs.svg)](https://www.npmjs.com/package/reactwindjs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/node/v/react-wind.svg)](https://nodejs.org)
+[![Node.js Version](https://img.shields.io/node/v/reactwindjs.svg)](https://nodejs.org)
 
 *Lightning-fast project setup for modern web development*
 
@@ -28,30 +28,24 @@
 Create a new React app with a single command:
 
 ```bash
-npm create react-wind@latest my-react-app
+npx reactwindjs my-react-app
 ```
 
 That's it! Your project will be created with all dependencies installed.
 
 ## 📦 Installation Methods
 
-### Method 1: npm create (Recommended)
+### Method 1: Using npx (Recommended)
 
 ```bash
-npm create react-wind@latest my-app
+npx reactwindjs my-app
 ```
 
-### Method 2: Using npx
+### Method 2: Global Installation
 
 ```bash
-npx react-wind my-app
-```
-
-### Method 3: Global Installation
-
-```bash
-npm install -g react-wind
-react-wind my-app
+npm install -g reactwindjs
+reactwindjs my-app
 ```
 
 ## 🎯 Usage
@@ -60,10 +54,10 @@ react-wind my-app
 
 ```bash
 # Quick start with default template
-npm create react-wind@latest my-app
+npx reactwindjs my-app
 
 # Or with template specification
-react-wind create react my-app
+reactwindjs create react my-app
 ```
 
 **What happens:**
